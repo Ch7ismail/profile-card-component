@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Kumbh+Sans:wght@400;700&display=swap);
+
+:root{
+    --DarkCyan: hsl(185, 75%, 39%);
+    --VeryDesaturatedBlue: hsl(229, 23%, 23%);
+    --DarkGrayishBlue:hsl(227, 10%, 46%);
+    --DarkGray:hsl(0, 0%, 59%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    font-family: 'Kumbh sans', sans-serif;
+    background-color: var(--DarkCyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-top.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: 550px, -550px;
+    background-position-y: 300px, -530px;
+}
+
+.card{
+    width: 20rem;
+    height: auto;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 3em;
+    font-size: clamp(.7rem, 1.5vw, 1.5rem);
+    position: relative;
+}
+
+.img-container >img{
+    width: 100%;
+    height: auto;
+}
+
+.profile-pic{
+    position: absolute;
+    left: 6.5rem;
+    top: 5rem;
+}
+
+.profile-pic >img{
+    border: White solid 4px;
+    border-radius: 50%;
+}
+
+.user-name{
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--VeryDesaturatedBlue);
+}
+
+.user-name >h3 >span,
+h6{
+    color: var(--DarkGray);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.city{
+    color: var(--DarkGrayishBlue);
+    text-align: center;
+    font-weight: 600;
+    margin-top: .5rem;
+    margin-bottom: 1.3rem;
+}
+
+.box-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+h3{
+    color: var(--VeryDesaturatedBlue);
+    font-weight: 700;
+}
+
+.followers,
+.likes,
+.photos{
+    text-align: center;
+}
